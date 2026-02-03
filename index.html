@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="login-container" class="quiz-container">
+  <h1>Welcome to the Quiz!</h1>
+  <input type="text" id="username" placeholder="Enter your name" />
+  <button class="btn" onclick="startQuiz()">Start Quiz</button>
+</div>
+
+<div id="quiz-container" class="quiz-container hide">
+  <h1>Quiz Time! 🎯</h1>
+  <div class="timer" id="timer">15s</div>
+  <img id="question-img" class="question-img" src="" alt="Question Image">
+  <div id="question" class="question"></div>
+  <div id="answers" class="answers"></div>
+  <button id="next-btn" class="btn hide">Next</button>
+  <div id="result" class="result hide"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
